@@ -1,3 +1,9 @@
+# Bude Web Services: run the full Umami build (it prepares the database and its own packages first).
+# Netlify guessed "pnpm run build:app", which skips those steps and fails.
+# See docs.umami.is/docs/guides/running-on-netlify
+[build]
+command = "pnpm build"
+
 [functions]
 included_files = ["node_modules/.geo/**"]
 
